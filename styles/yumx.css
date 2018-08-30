@@ -1,0 +1,236 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --indigo: #374351;
+  --teal-light: #B6E0DE;
+  --teal-mid: #71BEC6;
+  --teal-dark: #4C7C8E;
+  --grey: #A0AAB6;
+  --pink-dark: #ED4C5D;
+  --pink-light: #F9B8CB;
+  --bkg: #291E41;
+}
+
+/* Import fonts */
+
+html {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--indigo);
+}
+
+a:hover {
+  color: var(--teal-mid);
+  transition: color ease 0.2s;
+}
+
+@media all and (min-width: 320px) and (max-width: 780px) {
+  .mob-hide {
+    display: none;
+  }
+
+  .web-hide {
+    display: block;
+  }
+
+  header {
+    background-image: url("/yumxwebimage/hero_bkg-s.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: fixed;
+    background-size: cover;
+  }
+}
+
+@media all and (min-width: 781px) {
+  .mob-hide {
+    display: block;
+  }
+
+  .web-hide {
+    display: none;
+  }
+
+  header {
+    background-image: url("/yumxwebimage/hero_bkg-l.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: fixed;
+    background-size: cover;
+  }
+}
+
+/* --- mobile nav --- */
+#menu {
+  width: 40px;
+  height: 30px;
+  position: fixed;
+  float: right;
+  right: 32px;
+  margin-top: 32px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#menu span {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background: var(--grey);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#menu span:nth-child(1) {
+  top: 0px;
+}
+
+#menu span:nth-child(2),#menu span:nth-child(3) {
+  top: 12px;
+}
+
+#menu span:nth-child(4) {
+  top: 24px;
+}
+
+#menu.open span:nth-child(1) {
+  top: 12px;
+  width: 0%;
+  left: 50%;
+}
+
+#menu.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#menu.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#menu.open span:nth-child(4) {
+  top: 12px;
+  width: 0%;
+  left: 50%;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  right: -100vw;
+  top: 0;
+  background-color: rgba(241,248,249,.96);
+  opacity: 0.8;
+  transition: all ease 0.8s;
+}
+
+.overlay ul {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+
+.overlay img {
+  width: 20vw;
+  min-width: 50px;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.overlay li {
+  font-size: 3.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--indigo);
+}
+
+.pulldown {
+  right: 0px;
+  opacity: 1;
+}
+
+/* --- desktop nav --- */
+.desktopNav {
+  width: 100%;
+  background-color: rgba(255,255,255,0.8);
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.desktopNav li {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.desktopNav li:hover {
+  color: var(--pink-light);
+}
+
+.desktopNav li, .desktopNav img {
+  padding: 1rem 2rem;
+}
+
+/* --- hero --- */
+.heroWrap {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.heroImg-l {
+  height: 70vh;
+  max-width: 550px;
+  margin-right: 8vw;
+}
+
+.heroImg-s {
+  height: 70vh;
+  max-width: 300px;
+  margin-right: -8vw;
+}
+
+.heroLeft {
+  
+}

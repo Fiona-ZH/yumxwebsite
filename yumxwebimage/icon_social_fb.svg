@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-fb</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yumx-web" transform="translate(-1258.000000, -5719.000000)" fill="#FFFFFF">
+            <g id="Group-9" transform="translate(0.000000, 5667.000000)">
+                <g id="Group-8" transform="translate(1210.000000, 52.000000)">
+                    <path d="M68.155,10.656 L66.649,10.657 C65.468,10.657 65.239,11.218 65.239,12.041 L65.239,13.857 L68.056,13.857 L67.689,16.702 L65.239,16.702 L65.239,24 L62.302,24 L62.302,16.702 L59.846,16.702 L59.846,13.857 L62.302,13.857 L62.302,11.76 C62.302,9.325 63.789,8 65.96,8 C67,8 67.894,8.077 68.155,8.112 L68.155,10.656 Z M64,0 C55.164,0 48,7.163 48,16 C48,24.836 55.164,32 64,32 C72.837,32 80,24.836 80,16 C80,7.163 72.837,0 64,0 L64,0 Z" id="icon-fb"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

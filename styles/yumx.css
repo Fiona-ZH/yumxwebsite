@@ -24,10 +24,13 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: var(--indigo);
+  padding: 0 1rem;
 }
 
 a:hover {
-  color: var(--teal-mid);
+  /* color: var(--teal-mid); */
+  background-color: var(--pink-light);
+  border-radius: 100px;
   transition: color ease 0.2s;
 }
 
@@ -186,7 +189,7 @@ a:hover {
 /* --- desktop nav --- */
 .desktopNav {
   width: 100%;
-  background-color: rgba(255,255,255,0.5);
+  /* background-color: rgba(255,255,255,0.5); */
   position: absolute;
   top: 0;
   display: flex;
@@ -201,7 +204,9 @@ a:hover {
 }
 
 .desktopNav li:hover {
-  color: var(--pink-light);
+  /* background-color: var(--teal-light);
+  color: var(--indigo);
+  border-radius: 100px; */
 }
 
 .desktopNav li, .desktopNav img {
@@ -353,6 +358,91 @@ input[name=search]:focus {
   }
 }
 
-@media all and (min-width: 575px) {
+/* --- features --- */
+.feature {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10rem;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
 
+@media all and (min-width: 576px) {
+  .feature {
+    width: 60%;
+  }
+}
+
+.feature span img {
+  padding-bottom: 3rem;
+}
+
+.feature p {
+  padding-bottom: 2rem;
+  text-align: left;
+  color: var(--indigo);
+}
+
+@media all and (min-width: 781px) {
+  .grid-2col {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    align-items: center;
+    position: relative;
+  }
+
+  .feature {
+    padding-bottom: 10rem;
+  }
+
+  .feature .demo{
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .feature .float-r {
+    float: right;
+  }
+
+  .feature span {
+    padding: 0 5rem;
+  }
+}
+
+@media all and (min-width: 1281px) {
+  .feature span {
+    padding: 0 20rem 0 5rem;
+  }
+
+  .feature .align-r {
+    padding: 0 5rem 0 20rem;
+  }
+}
+
+/* --- testimonials --- */
+.tstm {
+  background-color: var(--indigo);
+}
+
+.tstm h2 {
+  color: #FFF;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.tstm .line {
+  width: 300px;
+  height: 1px;
+  background-color: var(--pink-light);
+  margin: 0 auto;
+}
+
+.tstm .reviews {
+  width: 80%;
+  padding: 5rem 0;
+  margin: 0 auto;
 }

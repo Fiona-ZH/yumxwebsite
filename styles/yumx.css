@@ -441,8 +441,49 @@ input[name=search]:focus {
   margin: 0 auto;
 }
 
+.tstm .grid-2col {
+  align-items: flex-start;
+}
+
 .tstm .reviews {
   width: 80%;
   padding: 5rem 0;
   margin: 0 auto;
+}
+
+.indiRev {
+  display: flex;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.indiRev>img {
+  padding: 1rem;
+}
+
+.indiRev span {
+  font-size: 1.6rem;
+  color: #FFF;
+  line-height: 2.4rem;
+}
+
+.indiRev .name {
+  font-weight: bold;
+}
+
+.indiRev div {
+  display: flex;
+  flex-flow: column;
+}
+
+.indiRev div img {
+  position: absolute;
+  padding-top: 1rem;
+  right: 2rem;
+}
+
+@media all and (min-width: 1681px) {
+  .tstm .reviews {
+    width: 70%;
+  }
 }
